@@ -1,0 +1,8 @@
+node_modules
+infrastructure
+dist
+.gitignore
+.github
+.env
+.env.*
+db
