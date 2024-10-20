@@ -1,4 +1,4 @@
-import { IUrlRepository } from '../../domain/repositories/url-repository.interface';
+import { IUrlRepository } from '@app/domain/repositories/url-repository.interface';
 
 export class GetOriginalUrlUseCase {
   constructor(private readonly urlRepository: IUrlRepository) {}

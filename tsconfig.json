@@ -16,6 +16,35 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@api/modules/*": [
+        "apps/api/src/modules/*"
+      ],
+      "@app/domain": [
+        "libs/domain/src"
+      ],
+      "@app/domain/*": [
+        "libs/domain/src/*"
+      ],
+      "@app/application": [
+        "libs/application/src"
+      ],
+      "@app/application/*": [
+        "libs/application/src/*"
+      ],
+      "@app/database": [
+        "libs/database/src"
+      ],
+      "@app/database/*": [
+        "libs/database/src/*"
+      ],
+      "@app/testing": [
+        "libs/testing/src"
+      ],
+      "@app/testing/*": [
+        "libs/testing/src/*"
+      ]
+    }
   }
 }
