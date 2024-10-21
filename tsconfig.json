@@ -44,6 +44,12 @@
       ],
       "@app/testing/*": [
         "libs/testing/src/*"
+      ],
+      "@app/common": [
+        "libs/common/src"
+      ],
+      "@app/common/*": [
+        "libs/common/src/*"
       ]
     }
   }

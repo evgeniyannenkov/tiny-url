@@ -12,6 +12,7 @@ import { ConfigModule } from '@nestjs/config';
       expandVariables: true,
     }),
     MikroOrmModule.forRoot({
+      debug: true,
       autoLoadEntities: true,
       dbName:
         process.env.NODE_ENV === 'test'
@@ -24,7 +25,5 @@ import { ConfigModule } from '@nestjs/config';
       driver: MongoDriver,
     }),
   ],
-  providers: [],
-  exports: [],
 })
 export class DatabaseModule {}

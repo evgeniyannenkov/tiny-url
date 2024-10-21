@@ -1,16 +1,14 @@
 version: '3'
 services:
   db:
-    image: postgres:latest
+    image: mongo:latest
     restart: always
-    environment:
-      POSTGRES_USER: ${PG_USER}
-      POSTGRES_PASSWORD: ${PG_PASSWORD}
-      POSTGRES_DB: ${PG_DATABASE}
     ports:
-      - '${PG_PORT}:5432'
+      - '27017:27017'
+    environment:
+      MONGO_INITDB_DATABASE: ${DB_NAME}
     volumes:
-      - postgres-data:/var/lib/postgresql/data
+      - mongo-data:/data/db
 
 volumes:
-  postgres-data:
+  mongo-data:
